@@ -20,7 +20,7 @@ int main() {
 
 		system("cls");
 
-		vector<string> games = {"Overwatch", "Cyberpunk 2077", "GTA V", "Forza Horizon 3", "Forza Horizon 5", "Control", "The Legend Of Zelda: TOTK", "Himno", "Superflight"};
+		vector<string> games = {"Overwatch", "Cyberpunk 2077", "GTA V", "Forza Horizon 3", "Forza Horizon 5", "Control", "The Legend Of Zelda: TOTK", "Himno", "Star Citizen"};
 	
 		games.push_back("Sea of Thieves");
 		games.push_back("Just Cause 3");
