@@ -1,0 +1,3 @@
+﻿  Game Randomizer.cpp
+C:\Users\Santi\Code\C++\Game Randomizer\Game Randomizer\Game Randomizer.cpp(17,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Game Randomizer.vcxproj -> C:\Users\Santi\Code\C++\Game Randomizer\Game Randomizer\x64\Debug\Game Randomizer.exe
