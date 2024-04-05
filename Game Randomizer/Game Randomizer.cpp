@@ -7,9 +7,6 @@
 using namespace std;
 
 
-
-
-
 int main() {
 
 
@@ -20,16 +17,23 @@ int main() {
 
 		system("cls");
 
-		vector<string> games = { "Overwatch", "Cyberpunk 2077", "GTA V", "Forza Horizon 3", "Forza Horizon 5", "Control", "The Legend Of Zelda: TOTK", "Himno", "Star Citizen" };
+		vector<string> games = { "Overwatch", "Cyberpunk 2077", "GTA V", "Forza Horizon 3", "Forza Horizon 5", "Control", "The Legend Of Zelda: TOTK"};
 
 		games.push_back("Sea of Thieves");
+		games.push_back("Outer Wilds");
+		games.push_back("Mirror's Edge Catalyst");
+		games.push_back("The Finals");
 		games.push_back("Just Cause 3");
 		games.push_back("Assetto Corsa Competizione");
 		games.push_back("Kerbal Space Program");
-
+		games.push_back("Forza Horizon 4");
+		games.push_back("Half-Life");
+		games.push_back("SteamWorld Dig 2");
+		games.push_back("BioShock");
 
 		/*
-
+		games.push_back("Himno");
+		games.push_back("Star Citizen");
 		games.push_back("Papers, Please");
 		games.push_back("Jedi: Fallen Order");
 		games.push_back("Rocket League");
@@ -71,7 +75,7 @@ int main() {
 
 		do {
 
-			cout << endl << "\n¿Quieres volver a tirar? (S/N)";
+			cout << endl << "\nÂ¿Quieres volver a tirar? (S/N)";
 			cin >> respuesta;
 			respuesta = toupper(respuesta);
 		} while (respuesta != 'S' && respuesta != 'N');
