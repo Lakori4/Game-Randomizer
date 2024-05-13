@@ -1,5 +1,5 @@
 #include <iostream>
-#include <vector> 
+#include <vector>
 #include <string>
 #include <ctime>
 #include <algorithm>
@@ -17,7 +17,7 @@ int main() {
 
 		system("cls");
 
-		vector<string> games = { "Overwatch", "Cyberpunk 2077", "GTA V", "Forza Horizon 3", "Forza Horizon 5", "Control", "The Legend Of Zelda: TOTK"};
+		vector <string> games = {"Overwatch", "Cyberpunk 2077", "GTA V", "Forza Horizon 3", "Forza Horizon 5", "Control", "The Legend Of Zelda: TOTK", "HearthStone"};
 
 		games.push_back("Sea of Thieves");
 		games.push_back("Outer Wilds");
@@ -29,11 +29,11 @@ int main() {
 		games.push_back("Forza Horizon 4");
 		games.push_back("Half-Life");
 		games.push_back("SteamWorld Dig 2");
+		games.push_back("Star Citizen");
 		games.push_back("BioShock");
 
 		/*
 		games.push_back("Himno");
-		games.push_back("Star Citizen");
 		games.push_back("Papers, Please");
 		games.push_back("Jedi: Fallen Order");
 		games.push_back("Rocket League");
@@ -47,27 +47,20 @@ int main() {
 
 			int j = rand() % games.size();
 
-
 			if (!count(printed.begin(), printed.end(), j)) {
 
 				printed.push_back(j);
 				cout << "\n\t" << i + 1 << ". " << games[j];
 
-			}
-
-			else {
+			} else {
 
 				j = rand() % games.size();
 
-				if (printed.size() == games.size()) {
-
+				if (printed.size() == games.size())	
 					break;
-				}
 
-				else {
-
+				else	
 					i--;
-				}
 			}
 		}
 
@@ -75,15 +68,16 @@ int main() {
 
 		do {
 
-			cout << endl << "\n¿Quieres volver a tirar? (S/N)";
+			cout << "\n\n¿Quieres volver a tirar? (S/N)";
 			cin >> respuesta;
 			respuesta = toupper(respuesta);
+
 		} while (respuesta != 'S' && respuesta != 'N');
 
-		if (respuesta == 'N') { cont = false; }
+		if (respuesta == 'N')
+			cont = false;
 
 	} while (cont);
 
 	return 0;
-
 }
