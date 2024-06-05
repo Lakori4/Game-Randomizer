@@ -31,6 +31,8 @@ int main() {
 		games.push_back("SteamWorld Dig 2");
 		games.push_back("Star Citizen");
 		games.push_back("BioShock");
+		games.push_back("MultiVersus");
+		games.push_back("Super Mario Odessey");
 
 		/*
 		games.push_back("Himno");
