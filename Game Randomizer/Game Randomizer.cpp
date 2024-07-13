@@ -45,13 +45,19 @@ int main() {
 
 		*/
 
-		vector <int> printed;
+		int nGames = games.size();
 
-		for (int i = 0; i <= games.size(); i++) {
+		for (int i = nGames; i > 0; i--) {
 
 			int j = rand() % games.size();
 
-			if (!count(printed.begin(), printed.end(), j)) {
+			cout << "\n\t" << nGames - i + 1 << ". " << games[j];
+
+			games.erase(games.begin() + j);
+
+
+
+		/*	if (!count(printed.begin(), printed.end(), j)) {
 
 				printed.push_back(j);
 				cout << "\n\t" << i + 1 << ". " << games[j];
@@ -65,7 +71,8 @@ int main() {
 
 				else	
 					i--;
-			}
+				}
+			}*/
 		}
 
 		char resp;
