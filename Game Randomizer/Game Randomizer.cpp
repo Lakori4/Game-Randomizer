@@ -55,24 +55,6 @@ int main() {
 
 			games.erase(games.begin() + j);
 
-
-
-		/*	if (!count(printed.begin(), printed.end(), j)) {
-
-				printed.push_back(j);
-				cout << "\n\t" << i + 1 << ". " << games[j];
-
-			} else {
-
-				j = rand() % games.size();
-
-				if (printed.size() == games.size())	
-					break;
-
-				else	
-					i--;
-				}
-			}*/
 		}
 
 		char resp;
