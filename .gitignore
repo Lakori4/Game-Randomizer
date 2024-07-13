@@ -3,4 +3,9 @@
 ################################################################################
 
 /.vs
-/Game Randomizer/.vs/Game Randomizer
+/.vscode
+*.exe
+*.ilk
+*.obj
+*.pdb
+*.snl
