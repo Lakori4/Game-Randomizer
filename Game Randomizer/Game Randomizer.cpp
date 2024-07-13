@@ -13,11 +13,13 @@ int main() {
 	bool cont = true;
 	srand(time(NULL));
 
+	vector <string> games;
+
 	do {
 
 		system("cls");
 
-		vector <string> games = {"Overwatch", "Cyberpunk 2077", "GTA V", "Forza Horizon 3", "Forza Horizon 5", "Control", "The Legend Of Zelda: TOTK", "HearthStone"};
+		games = {"Overwatch", "Cyberpunk 2077", "GTA V", "Forza Horizon 3", "Forza Horizon 5", "Control", "The Legend Of Zelda: TOTK", "HearthStone"};
 
 		games.push_back("Sea of Thieves");
 		games.push_back("Outer Wilds");
@@ -66,17 +68,17 @@ int main() {
 			}
 		}
 
-		char respuesta;
+		char resp;
 
 		do {
 
-			cout << "\n\n¿Quieres volver a tirar? (S/N)";
-			cin >> respuesta;
-			respuesta = toupper(respuesta);
+			cout << "\n\nDo you want to roll again? (Y/N): ";
+			cin >> resp;
+			resp = toupper(resp);
 
-		} while (respuesta != 'S' && respuesta != 'N');
+		} while (resp != 'Y' && resp != 'N');
 
-		if (respuesta == 'N')
+		if (resp == 'N')
 			cont = false;
 
 	} while (cont);
