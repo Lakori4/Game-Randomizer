@@ -33,7 +33,7 @@ while True:
 
     for i in range(nGames):
         j = random.randint(0, len(games) -1)
-        print("\n\t %d. %s" % (i + 1, games[j]))
+        print("\t %d. %s" % (i + 1, games[j]))
         games.remove(games[j])
     
     
