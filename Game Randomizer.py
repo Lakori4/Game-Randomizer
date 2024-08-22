@@ -1,11 +1,23 @@
 
 import random
+import os
+
+def clear():
+    if os.name == "nt":
+        os.system("cls")
+
+    else:
+        os.system("clear")
 
 
 
-print()
+
+
 
 while True:
+
+    clear()
+
     games = ["Overwatch", "Cyberpunk 2077", "GTA V", "Forza Horizon 3", "Forza Horizon 5", "Control", "The Legend Of Zelda: TOTK", "HearthStone"]
 
     games.append("Sea of Thieves")
